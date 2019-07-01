@@ -18,7 +18,7 @@ class graphical_app(Frame):
         self.canvas.grid(row=0, column=0)
         self.balls = []
         self.colors = ['red','orange','yellow','green','blue','indigo','violet']
-        for i in range(100):
+        for i in range(1000):
             size = 20 #choice([20,30,40,50])
             self.balls.append(ball_obj(self.canvas.create_oval([1,1,size,size], fill=choice(self.colors))))
         self.update()

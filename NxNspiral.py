@@ -4,7 +4,7 @@ class NxNspiral:
         self.size = size
         self.data = [[None for x in range(size)] for y in range(size)]
 
-    def diplay(self):
+    def display(self):
         fmt_str = "{: >" + str(len(str(self.size ** 2))) + "}"
         for line in self.data:
             print ("[" + (fmt_str + ", ") * (self.size-1) + fmt_str + "]").format(*line)
@@ -32,8 +32,8 @@ class NxNspiral:
             dy *= -1
 
 
-for i in [10,20]:  # range(1,10):
+for i in [5, 10, 20]:  # range(1,10):
     mySpiral = NxNspiral(i)
     mySpiral.fill_spiral()
-    mySpiral.diplay()
+    mySpiral.display()
     print

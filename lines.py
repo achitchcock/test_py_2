@@ -20,7 +20,7 @@ class graphical_app(Frame):
         self.lines = []
         self.colors = ['red','orange','yellow','green','blue','indigo','violet']
         self.count = 0
-        for i in range(2):
+        for i in range(6):
             size = 20 #choice([20,30,40,50])
             self.points.append(point_obj([randint(0,self.canvas_size),randint(0,self.canvas_size)]))
         self.update()
